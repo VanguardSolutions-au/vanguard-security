@@ -1,0 +1,85 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #333; /* Dark grey background */
+    color: white; /* White text for contrast */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Top Menu Styling */
+.menu {
+    width: 100%;
+    background-color: #222;
+    padding: 15px 0;
+    display: flex;
+    justify-content: center;
+    border-bottom: 2px solid #555;
+}
+
+.menu a {
+    color: white;
+    margin: 0 20px;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+.menu a:hover {
+    color: #ff4c4c; /* Light red hover effect */
+}
+
+/* Content Area Styling */
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    max-width: 1200px;
+    margin-top: 40px;
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+/* Stats Container and Boxes */
+.stats-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.stat-box {
+    background-color: #4c0000; /* Dark red base color */
+    color: white;
+    padding: 20px;
+    width: 200px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2em;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+/* Different shades for each box */
+.stat-box:nth-child(1) { background-color: #ff4c4c; }
+.stat-box:nth-child(2) { background-color: #cc4040; }
+.stat-box:nth-child(3) { background-color: #993333; }
+.stat-box:nth-child(4) { background-color: #662626; }
+
+.stat-box:hover {
+    background-color: #ff3333; /* Brighter red on hover */
+}
